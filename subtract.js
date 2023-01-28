@@ -21,11 +21,12 @@ function generateEquation() {
     let dummyAnswer1 = Math.floor(Math.random() * 13);
     let dummyAnswer2 = Math.floor(Math.random() * 13);
 
-    answer = genNum1 + genNum2
+    answer = genNum1 - genNum2
+    console.log(answer);
 
     while(true) {
 
-        if(dummyAnswer1 !== dummyAnswer2 && dummyAnswer1 !== answer && dummyAnswer2 !==answer) {
+        if(dummyAnswer1 !== dummyAnswer2 && dummyAnswer1 !== answer && dummyAnswer2 !== answer) {
             break
         }
 
